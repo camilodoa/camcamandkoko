@@ -1,0 +1,192 @@
+/*Tags*/
+html {
+    scroll-behavior: smooth;
+}
+img {
+    image-orientation: from-image;
+}
+a {
+  text-decoration: none;
+  color: #0074D9;
+
+}
+a:hover{
+  text-decoration: none;
+  color: #AAAAAA;
+}
+/*Color*/
+.black{
+  color: black;
+}
+/*Header*/
+.fixed{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  position: -webkit-sticky; /* Required for Safari */
+  position: sticky;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem;
+  border-bottom: 1px solid #D3D3D3;
+}
+.links{
+  float: right;
+}
+/*Text*/
+.text{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.header{
+  text-transform: uppercase;
+  font-family: Raleway "Black";
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-stretch: expanded;
+  color: black;
+  align-items: center;
+  height: auto;
+  
+}
+.header.nav{
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: .5rem;
+}
+.header.nav:hover {
+  text-decoration: none;
+}
+.header.name{
+  font-size: 2rem;
+}
+.header.name.alt{
+  display: none;
+}
+.header.name.main{
+  display: block;
+}
+.links.dropdown{
+  display: none;
+}
+.offset{
+  margin-right: 3.5rem;
+}
+/*Main body content*/
+.main-body{
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+/*Profile Picture*/
+.profile{
+  width: 400px;
+  height: 400px;
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 50%;
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 50%;
+
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1rem;
+  }
+/*About*/
+.about{
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+/*Work page*/
+.work{
+  width: 75%;
+}
+/*Projects page*/
+.projects{
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+.proj-img{
+  width: 100%;
+  max-width: 440;
+}
+.proj-header{
+  float: left;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+/*New line spacing*/
+.br{
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 24%;
+}
+/*Footer*/
+.contact{
+  display: flex;
+  justify-content: center;
+}
+.footer-link{
+  margin: 1rem 2rem;
+
+}
+/*For small screens*/
+@media only screen and (max-width: 650px) {
+  /*Header*/
+  .header.nav{
+    display: none;
+  }
+  .links.dropdown{
+    display: block;
+    margin-right: 1.5rem;
+  }
+
+  .header.name.alt{
+    display: block;
+  }
+  /*Profile Picture*/
+  .profile{
+    width: 250px;
+    height: 250px;
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: 50%;
+
+    /* Firefox 1-3.6 */
+    -moz-border-radius: 50%;
+
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: 50%;
+    display: inline-block;
+  }
+  /*Main body content*/
+  .main-body{
+    height: auto;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  /*About*/
+  .about{
+    display: inline-block;
+    margin: 1.5rem;
+    font-size: 1.2rem;
+  }
+  /*Projects page*/
+  .projects{
+    text-align: left;
+    justify-content: center;
+    width: 90%;
+
+  }
+}
