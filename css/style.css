@@ -88,6 +88,10 @@ a:hover{
   align-items: center;
   justify-content: center;
 }
+
+.main-body.1{
+  flex-direction: column;
+}
 /*Profile Picture*/
 .profile{
   width: 300px;
